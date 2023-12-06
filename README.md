@@ -7,7 +7,7 @@
 make install
 
 Запуск Игры Brain Even:
-make Brain Even
+make brain-even
 
 Победа brain-even:
 https://asciinema.org/a/OtJZINoqghvvGhtr129z09HrE
@@ -15,8 +15,20 @@ https://asciinema.org/a/OtJZINoqghvvGhtr129z09HrE
 Поражение brain-even:
 https://asciinema.org/a/qP1AVj0Qocn32QPOjs6jOkf6W
 
+Запуск Игры Brain Calc:
+make brain-calc
+
 Победа brain-calc:
 https://asciinema.org/a/WWb4Ydgv1OIjD9Dd6RVgLHJz1
 
 Поражение brain-calc:
 https://asciinema.org/a/rKa382brgkItfRcEmST18sy27
+
+Запуск Игры Brain GCD:
+make brain-gcd
+
+Победа brain-gcd:
+https://asciinema.org/a/O7Cl3pl2bDRqQRmtwM5Qgx3OZ
+
+Поражение brain-gcd:
+https://asciinema.org/a/XT1Hsv0jzgPPqGrV9D88MyRPu

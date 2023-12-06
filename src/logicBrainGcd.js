@@ -3,10 +3,11 @@ import {
   printRule,
   randomGenerateNum,
   askQuestion,
+  NOD,
 } from './index.js';
 
 const MAX_CORRECT_ANSWERS = 3;
-const GAME = 'even';
+const GAME = 'gcd';
 
 function printQuestion() {
   const user = welcomeUser();
@@ -16,11 +17,12 @@ function printQuestion() {
   while (correctAnswerCount < MAX_CORRECT_ANSWERS) {
     const randomNumber = randomGenerateNum();
 
-    console.log(`Question: ${randomNumber.randomNumber1}`);
+    console.log(`Question: ${randomNumber.randomNumber1} ${randomNumber.randomNumber2}`);
     const userAnswer = askQuestion();
-    const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
 
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    const correctAnswer = NOD(randomNumber.randomNumber1, randomNumber.randomNumber2);
+
+    if (parseInt(userAnswer, 10) === correctAnswer) {
       console.log('Correct!');
       correctAnswerCount += 1;
     } else {
@@ -32,7 +34,6 @@ function printQuestion() {
       break;
     }
   }
-
   if (correctAnswerCount === MAX_CORRECT_ANSWERS) {
     console.log(`Congratulations, ${user}!`);
   }

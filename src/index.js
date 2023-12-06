@@ -1,8 +1,16 @@
 import readlineSync from 'readline-sync';
 
-export function printRule() {
-  const rule = 'What is the result of the expression?';
-  console.log(rule);
+export function printRule(GAME) {
+  switch (GAME) {
+    case 'even':
+      return console.log('Answer "yes" if the number is even, otherwise answer "no".');
+    case 'calc':
+      return console.log('What is the result of the expression?');
+    case 'gcd':
+      return console.log('Find the greatest common divisor of given numbers.');
+    default:
+      return console.log('Нет такой игры');
+  }
 }
 
 export function getRandomIntInclusive(min, max) {
@@ -41,7 +49,24 @@ export function randomGenerateNum() {
   const expression = `${randomNumber1}${operator}${randomNumber2}`;
   const correctAnswer = calculateExpression(randomNumber1, randomNumber2, operator);
 
-  return { expression, correctAnswer };
+  return {
+    expression, correctAnswer, randomNumber1, randomNumber2,
+  };
+}
+
+export function NOD(randomNumber1, randomNumber2) {
+  let num1 = randomNumber1;
+  let num2 = randomNumber2;
+
+  while (num1 !== 0 && num2 !== 0) {
+    if (num1 > num2) {
+      num1 %= num2;
+    } else {
+      num2 %= num1;
+    }
+  }
+  const result = num1 + num2;
+  return result;
 }
 
 export function askQuestion() {
