@@ -10,6 +10,8 @@ export function printRule(GAME) {
       return console.log('Find the greatest common divisor of given numbers.');
     case 'progression':
       return console.log('What number is missing in the progression?');
+    case 'prime':
+      return console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     default:
       return console.log('Нет такой игры');
   }
@@ -36,7 +38,7 @@ export function calculateExpression(randomNumber1, randomNumber2, operator) {
     case '*':
       return randomNumber1 * randomNumber2;
     default:
-      throw new Error(`Invalid operator: ${operator}`);
+      return console.error(`Invalid operator: ${operator}`);
   }
 }
 
@@ -101,4 +103,16 @@ export function generateArithmeticProgression() {
   const stringProgression = String(progression);
 
   return { stringProgression, stringSecretNumProgression, secretNumProgression };
+}
+
+export function primeNumb(num) {
+  if (num > 1) {
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
+        return 'no';
+      }
+    }
+    return 'yes';
+  }
+  return 'Число должно быть больше 1';
 }

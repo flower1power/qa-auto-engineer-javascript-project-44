@@ -41,3 +41,12 @@ https://asciinema.org/a/sTTxVmsNKbpYLFeLO98sVbf6B
 
 Поражение brain-progression:
 https://asciinema.org/a/VTPvsDKQmDiJN81ScCeckNZ82
+
+Запуск Игры brain-prime:
+make brain-prime
+
+Победа brain-prime:
+https://asciinema.org/a/TbwdFsw6xemkQ4UMs8xm3nwEp
+
+Поражение brain-prime:
+https://asciinema.org/a/KTKbdpiJyYTnwMZjnn2aMN0Jg
