@@ -8,6 +8,8 @@ export function printRule(GAME) {
       return console.log('What is the result of the expression?');
     case 'gcd':
       return console.log('Find the greatest common divisor of given numbers.');
+    case 'progression':
+      return console.log('What number is missing in the progression?');
     default:
       return console.log('Нет такой игры');
   }
@@ -72,4 +74,31 @@ export function NOD(randomNumber1, randomNumber2) {
 export function askQuestion() {
   const userAnswer = readlineSync.question('Your answer: ');
   return userAnswer;
+}
+
+export function generateArithmeticProgression() {
+  // Генерируем случайную длину прогрессии от 5 до 10
+  const progressionLength = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+
+  // Генерируем случайное начальное значение и шаг
+  const startValue = Math.floor(Math.random() * 10) + 1;
+  const commonDifference = Math.floor(Math.random() * 5) + 1;
+
+  // Генерируем арифметическую прогрессию
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    const currentValue = startValue + i * commonDifference;
+    progression.push(currentValue);
+  }
+
+  const randomIndex = Math.floor(
+    Math.random() * ((progression.length - 2) - progression[0] + 1),
+  ) + progression[0];
+  const Secret = '..';
+  const secretNumProgression = progression.splice(randomIndex, 1, Secret);
+  const stringSecretNumProgression = String(secretNumProgression);
+  progression.splice(randomIndex, 1, Secret);
+  const stringProgression = String(progression);
+
+  return { stringProgression, stringSecretNumProgression, secretNumProgression };
 }

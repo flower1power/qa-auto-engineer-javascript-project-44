@@ -32,3 +32,12 @@ https://asciinema.org/a/O7Cl3pl2bDRqQRmtwM5Qgx3OZ
 
 Поражение brain-gcd:
 https://asciinema.org/a/XT1Hsv0jzgPPqGrV9D88MyRPu
+
+Запуск Игры Brain GCD:
+make brain-progression
+
+Победа brain-progression:
+https://asciinema.org/a/sTTxVmsNKbpYLFeLO98sVbf6B
+
+Поражение brain-progression:
+https://asciinema.org/a/VTPvsDKQmDiJN81ScCeckNZ82
