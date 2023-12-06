@@ -4,10 +4,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/47698859779cb3966a48/maintainability)](https://codeclimate.com/github/flower1power/qa-auto-engineer-javascript-project-44/maintainability)
 
 Установка Пакета Игры:
-[![asciicast](https://asciinema.org/a/X1ZtYx8lFtxz9O1PCBqcuzFz6.svg)](https://asciinema.org/a/X1ZtYx8lFtxz9O1PCBqcuzFz6)
+make install
 Запуск Игры Brain Even:
-[![asciicast](https://asciinema.org/a/SgpsEv5gNuUVYHaUzdjrAmqWq.svg)](https://asciinema.org/a/SgpsEv5gNuUVYHaUzdjrAmqWq)
-Победа:
-[![asciicast](https://asciinema.org/a/OtJZINoqghvvGhtr129z09HrE.svg)](https://asciinema.org/a/OtJZINoqghvvGhtr129z09HrE)
-Поражение:
-[![asciicast](https://asciinema.org/a/qP1AVj0Qocn32QPOjs6jOkf6W.svg)](https://asciinema.org/a/qP1AVj0Qocn32QPOjs6jOkf6W)
+make Brain Even
+
+Победа brain-even:
+https://asciinema.org/a/OtJZINoqghvvGhtr129z09HrE
+Поражение brain-even:
+<a href="https://asciinema.org/a/qP1AVj0Qocn32QPOjs6jOkf6W" target="_blank"><img src="https://asciinema.org/a/qP1AVj0Qocn32QPOjs6jOkf6W.svg" /></a>
+
+Победа brain-calc:
+https://asciinema.org/a/WWb4Ydgv1OIjD9Dd6RVgLHJz1
+
+Поражение brain-calc:
+<a href="https://asciinema.org/a/rKa382brgkItfRcEmST18sy27" target="_blank"><img src="https://asciinema.org/a/rKa382brgkItfRcEmST18sy27.svg" /></a>
