@@ -96,11 +96,11 @@ export function generateArithmeticProgression() {
   const randomIndex = Math.floor(
     Math.random() * ((progression.length - 2) - progression[0] + 1),
   ) + progression[0];
-  const Secret = '..';
-  const secretNumProgression = progression.splice(randomIndex, 1, Secret);
+
+  const secretNumProgression = progression.splice(randomIndex, 1, '..');
   const stringSecretNumProgression = String(secretNumProgression);
-  progression.splice(randomIndex, 1, Secret);
-  const stringProgression = String(progression);
+  progression.splice(randomIndex, 1, '..');
+  const stringProgression = String(progression.join(' '));
 
   return { stringProgression, stringSecretNumProgression, secretNumProgression };
 }
