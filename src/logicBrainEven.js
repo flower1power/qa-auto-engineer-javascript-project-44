@@ -18,7 +18,7 @@ function logicBrainEven() {
 
     console.log(`Question: ${randomNumber.randomNumber1}`);
     const userAnswer = askQuestion();
-    const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
+    const correctAnswer = randomNumber.randomNumber1 % 2 === 0 ? 'yes' : 'no';
 
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
       console.log('Correct!');
