@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import printQuestion from '../../src/logicBrainCalc.js';
+import logicBrainCalc from '../../src/logicBrainCalc.js';
 
-printQuestion();
+logicBrainCalc();

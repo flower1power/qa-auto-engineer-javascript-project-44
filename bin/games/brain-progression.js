@@ -1,3 +1,3 @@
-import printQuestion from '../../src/logicBrainProgression.js';
+import logicBrainProgression from '../../src/logicBrainProgression.js';
 
-printQuestion();
+logicBrainProgression();

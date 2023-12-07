@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import printQuestion from '../../src/logicBrainGcd.js';
+import logicBrainGcd from '../../src/logicBrainGcd.js';
 
-printQuestion();
+logicBrainGcd();

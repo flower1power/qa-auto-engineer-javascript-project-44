@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import printQuestion from '../../src/logicBrainPrime.js';
+import logicBrainPrime from '../../src/logicBrainPrime.js';
 
-printQuestion();
+logicBrainPrime();

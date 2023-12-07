@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import printQuestion from '../../src/logicEvenGame.js';
+import logicBrainEven from '../../src/logicBrainEven.js';
 
-printQuestion();
+logicBrainEven();

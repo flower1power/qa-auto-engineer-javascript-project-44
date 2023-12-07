@@ -116,3 +116,7 @@ export function primeNumb(num) {
   }
   return 'Число должно быть больше 1';
 }
+
+export function isEven(num) {
+  return num % 2 === 0;
+}

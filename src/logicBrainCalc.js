@@ -8,7 +8,7 @@ import {
 const MAX_CORRECT_ANSWERS = 3;
 const GAME = 'calc';
 
-function printQuestion() {
+function logicBrainCalc() {
   const user = welcomeUser();
   printRule(GAME);
   let correctAnswerCount = 0;
@@ -36,4 +36,4 @@ function printQuestion() {
   }
 }
 
-export default printQuestion;
+export default logicBrainCalc;

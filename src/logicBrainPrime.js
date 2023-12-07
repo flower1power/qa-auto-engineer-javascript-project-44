@@ -9,7 +9,7 @@ import {
 const MAX_CORRECT_ANSWERS = 3;
 const GAME = 'prime';
 
-function printQuestion() {
+function logicBrainPrime() {
   const user = welcomeUser();
   printRule(GAME);
   let correctAnswerCount = 0;
@@ -39,4 +39,4 @@ function printQuestion() {
   }
 }
 
-export default printQuestion;
+export default logicBrainPrime;
