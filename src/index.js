@@ -50,7 +50,7 @@ export function randomGenerateNum() {
   const randomNumber2 = getRandomIntInclusive(MIN_NUMBER, MAX_NUMBER);
   const operator = getRandomOperator();
 
-  const expression = `${randomNumber1}${operator}${randomNumber2}`;
+  const expression = `${randomNumber1} ${operator} ${randomNumber2}`;
   const correctAnswer = calculateExpression(randomNumber1, randomNumber2, operator);
 
   return {
