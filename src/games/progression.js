@@ -15,7 +15,7 @@ const settingProgression = {
 const getQuestionGame = (firstElement, hiddenElementPosition, step) => {
   const result = [];
   for (let i = 0; i < settingProgression.maxLength; i += 1) {
-    if (i === hiddenElementPosition - 1) {
+    if (i === hiddenElementPosition) {
       result.push('..');
     } else {
       const nextElementProgression = `${i * step + firstElement}`;
@@ -30,8 +30,16 @@ export const getQuestionWithAnswer = () => {
   const step = getRandomInt(settingProgression.step.min, settingProgression.step.max);
   const hiddenElementPosition = getRandomInt(0, settingProgression.maxLength);
 
-  const answer = String(firstElement + (hiddenElementPosition + 1) * step);
+  console.log('firstElement:', firstElement);
+  console.log('step:', step);
+  console.log('hiddenElementPosition:', hiddenElementPosition);
+
+  const answer = String(firstElement + (hiddenElementPosition) * step);
+  console.log('answer:', answer);
+
   const question = getQuestionGame(firstElement, hiddenElementPosition, step).join(' ');
+  console.log('question:', question);
+
   return { question, answer };
 };
 
