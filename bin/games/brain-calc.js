@@ -1,4 +1,7 @@
 #!/usr/bin/env node
-import logicBrainCalc from '../../src/logicBrainCalc.js';
+import initGame from '../../src/index.js';
+import { getQuestionWithAnswer } from '../../src/games/calc.js';
 
-logicBrainCalc();
+const description = 'What is the result of the expression?';
+
+initGame(getQuestionWithAnswer, description);

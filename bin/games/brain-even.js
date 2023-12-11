@@ -1,4 +1,7 @@
 #!/usr/bin/env node
-import logicBrainEven from '../../src/logicBrainEven.js';
+import initGame from '../../src/index.js';
+import { getQuestionWithAnswer } from '../../src/games/even.js';
 
-logicBrainEven();
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+initGame(getQuestionWithAnswer, description);

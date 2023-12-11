@@ -1,4 +1,7 @@
 #!/usr/bin/env node
-import logicBrainProgression from '../../src/logicBrainProgression.js';
+import initGame from '../../src/index.js';
+import { getQuestionWithAnswer } from '../../src/games/progression.js';
 
-logicBrainProgression();
+const description = 'What number is missing in the progression?';
+
+initGame(getQuestionWithAnswer, description);
