@@ -30,15 +30,9 @@ export const getQuestionWithAnswer = () => {
   const step = getRandomInt(settingProgression.step.min, settingProgression.step.max);
   const hiddenElementPosition = getRandomInt(0, settingProgression.maxLength);
 
-  console.log('firstElement:', firstElement);
-  console.log('step:', step);
-  console.log('hiddenElementPosition:', hiddenElementPosition);
-
   const answer = String(firstElement + (hiddenElementPosition) * step);
-  console.log('answer:', answer);
 
   const question = getQuestionGame(firstElement, hiddenElementPosition, step).join(' ');
-  console.log('question:', question);
 
   return { question, answer };
 };
