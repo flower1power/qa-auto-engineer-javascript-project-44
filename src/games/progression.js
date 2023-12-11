@@ -15,7 +15,7 @@ const settingProgression = {
 const getQuestionGame = (firstElement, hiddenElementPosition, step) => {
   const result = [];
   for (let i = 0; i < settingProgression.maxLength; i += 1) {
-    if (i === hiddenElementPosition) {
+    if (i === hiddenElementPosition - 1) {
       result.push('..');
     } else {
       const nextElementProgression = `${i * step + firstElement}`;
