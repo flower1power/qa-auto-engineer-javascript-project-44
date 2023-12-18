@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import logicBrainPrime from '../../src/logicBrainPrime.js';
+import { initGame } from '../../src/index.js';
+import { getQuestionWithAnswer, description } from '../../src/games/prime.js';
 
-logicBrainPrime();
+initGame(getQuestionWithAnswer, description);

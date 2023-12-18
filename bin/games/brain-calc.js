@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import logicBrainCalc from '../../src/logicBrainCalc.js';
+import { initGame } from '../../src/index.js';
+import { description, getQuestionWithAnswer } from '../../src/games/calc.js';
 
-logicBrainCalc();
+initGame(getQuestionWithAnswer, description);

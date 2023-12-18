@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import logicBrainEven from '../../src/logicBrainEven.js';
+import { initGame } from '../../src/index.js';
+import { getQuestionWithAnswer, description } from '../../src/games/even.js';
 
-logicBrainEven();
+initGame(getQuestionWithAnswer, description);

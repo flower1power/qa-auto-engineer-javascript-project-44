@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import logicBrainProgression from '../../src/logicBrainProgression.js';
+import { initGame } from '../../src/index.js';
+import { getQuestionWithAnswer, description } from '../../src/games/progression.js';
 
-logicBrainProgression();
+initGame(getQuestionWithAnswer, description);
