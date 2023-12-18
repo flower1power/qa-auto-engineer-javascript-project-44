@@ -1,5 +1,7 @@
 import { getRandomInt } from '../index.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
+
 function NOD(randomNumber1, randomNumber2) {
   let num1 = randomNumber1;
   let num2 = randomNumber2;
@@ -15,7 +17,7 @@ function NOD(randomNumber1, randomNumber2) {
   return result;
 }
 
-export function getQuestionWithAnswer() {
+function getQuestionWithAnswer() {
   const MIN_NUMBER = 1;
   const MAX_NUMBER = 100;
 
@@ -28,4 +30,4 @@ export function getQuestionWithAnswer() {
   return { question, answer };
 }
 
-export { initGame } from '../index.js';
+export { getQuestionWithAnswer, description };

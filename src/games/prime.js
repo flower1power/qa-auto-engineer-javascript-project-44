@@ -1,5 +1,7 @@
 import { getRandomInt } from '../index.js';
 
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function primeNumb(num) {
   if (num > 1) {
     for (let i = 2; i < num; i += 1) {
@@ -12,7 +14,7 @@ function primeNumb(num) {
   return 'Число должно быть больше 1';
 }
 
-export function getQuestionWithAnswer() {
+function getQuestionWithAnswer() {
   const MIN_NUMBER = 1;
   const MAX_NUMBER = 100;
 
@@ -24,4 +26,4 @@ export function getQuestionWithAnswer() {
   return { question, answer };
 }
 
-export { initGame } from '../index.js';
+export { getQuestionWithAnswer, description };

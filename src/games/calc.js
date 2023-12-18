@@ -1,5 +1,7 @@
 import { getRandomInt } from '../index.js';
 
+const description = 'What is the result of the expression?';
+
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
   const randomIndex = getRandomInt(0, operators.length - 1);
@@ -19,7 +21,7 @@ function calculateExpression(randomNumber1, randomNumber2, operator) {
   }
 }
 
-export function getQuestionWithAnswer() {
+function getQuestionWithAnswer() {
   const MIN_NUMBER = 1;
   const MAX_NUMBER = 100;
 
@@ -33,4 +35,4 @@ export function getQuestionWithAnswer() {
   return { question, answer };
 }
 
-export { initGame } from '../index.js';
+export { getQuestionWithAnswer, description };

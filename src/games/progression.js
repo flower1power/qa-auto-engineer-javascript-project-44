@@ -1,5 +1,7 @@
 import { getRandomInt } from '../index.js';
 
+const description = 'What number is missing in the progression?';
+
 const settingProgression = {
   start: {
     min: 2,
@@ -25,7 +27,7 @@ const getQuestionGame = (firstElement, hiddenElementPosition, step) => {
   return result;
 };
 
-export const getQuestionWithAnswer = () => {
+const getQuestionWithAnswer = () => {
   const firstElement = getRandomInt(settingProgression.start.min, settingProgression.start.max);
   const step = getRandomInt(settingProgression.step.min, settingProgression.step.max);
   const hiddenElementPosition = getRandomInt(0, settingProgression.maxLength);
@@ -37,4 +39,4 @@ export const getQuestionWithAnswer = () => {
   return { question, answer };
 };
 
-export { initGame } from '../index.js';
+export { getQuestionWithAnswer, description };
